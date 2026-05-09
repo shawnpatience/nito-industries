@@ -183,7 +183,8 @@ h2 em { font-style: normal; color: var(--blue); }
 ════════════════════════════════════════ */
 .hero {
   min-height: 100vh;
-  background: var(--dark);
+  background: linear-gradient(rgba(6,6,15,0.70), rgba(6,6,15,0.78)),
+              url('hero-solar.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   position: relative;
