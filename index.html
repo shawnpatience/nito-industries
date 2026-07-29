@@ -917,13 +917,18 @@ a.contact-info-value:hover { color:var(--orange); }
 }
 .exclusive-strip {
   background:var(--orange);
-  padding:16px 80px;
-  display:flex; align-items:center; gap:14px;
+  padding:36px 80px;
+  display:flex; flex-direction:column; align-items:center;
+  justify-content:center; text-align:center; gap:10px;
 }
-.exclusive-strip-text {
-  font-size:0.92rem; font-weight:600; color:#fff; line-height:1.4;
+.exclusive-strip-line1 {
+  font-family:'Bebas Neue', sans-serif;
+  font-size:1.8rem; letter-spacing:0.04em; color:#fff; line-height:1.1;
 }
-.exclusive-strip-text span { font-weight:400; opacity:0.9; }
+.exclusive-strip-line2 {
+  font-size:0.95rem; font-weight:400; color:rgba(255,255,255,0.92); line-height:1.5;
+  max-width:640px;
+}
 .winch-stats-grid {
   display:grid; grid-template-columns:repeat(4,1fr);
   background:var(--dark2); border-bottom:1px solid var(--steel);
@@ -1034,7 +1039,7 @@ a.contact-info-value:hover { color:var(--orange); }
   .winch-video-section { padding:60px 40px; }
   .winch-video-inner { grid-template-columns:1fr; gap:36px; }
   .winch-cta-section { padding:72px 40px; }
-  .exclusive-strip { padding:16px 40px; }
+  .exclusive-strip { padding:28px 40px; }
 }
 @media (max-width:860px) {
   .winch-hero { padding:80px 40px 60px; min-height:72vh; }
@@ -1044,7 +1049,7 @@ a.contact-info-value:hover { color:var(--orange); }
   .winch-specs-section { padding:0 20px 48px; }
   .winch-video-section { padding:48px 20px; }
   .winch-cta-section { padding:56px 20px; }
-  .exclusive-strip { padding:14px 20px; }
+  .exclusive-strip { padding:24px 20px; }
 }
 @media (max-width:560px) {
   .winch-hero { padding:80px 20px 48px; }
@@ -1814,8 +1819,8 @@ a.contact-info-value:hover { color:var(--orange); }
   </div>
 
   <div class="exclusive-strip">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" style="color:#fff;flex-shrink:0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-    <p class="exclusive-strip-text">Nito Industries is the <strong>exclusive South African distributor</strong> of this Capstan Winch. <span>Contact us to discuss availability, technical specifications and installation support.</span></p>
+    <div class="exclusive-strip-line1">★ &nbsp;Nito Industries — Exclusive South African Distributor</div>
+    <div class="exclusive-strip-line2">Contact us to discuss availability, technical specifications and installation support for the 3CP1S-BFS Capstan Winch.</div>
   </div>
 
   <div class="winch-stats-grid">
